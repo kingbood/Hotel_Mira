@@ -43,9 +43,4 @@
   .btn {
     transition-duration: 150ms;
   }
-
-  .scroll-cue__line::after {
-    animation: none;
-    opacity: 0.6;
-  }
 }
