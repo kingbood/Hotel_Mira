@@ -30,7 +30,8 @@
   }
 
   .nav__logo,
-  .theme-toggle {
+  .menu,
+  .menu-toggle {
     animation-duration: 250ms;
   }
 
@@ -40,7 +41,14 @@
 
   .theme-toggle__thumb,
   .theme-toggle__icon,
+  .menu-toggle__bar,
+  .menu-panel,
   .btn {
     transition-duration: 150ms;
+  }
+
+  .menu-panel,
+  .menu-panel[data-open='true'] {
+    transform: none;
   }
 }
