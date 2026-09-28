@@ -235,7 +235,10 @@
 /* ---------- theme switch ---------- */
 
 .hero__theme {
-  flex-shrink: 0;
+  position: absolute;
+  z-index: 2;
+  top: 46vh;
+  right: clamp(48px, 16vw, 280px);
 }
 
 .theme-switch {
@@ -357,17 +360,9 @@
   justify-content: flex-end;
 }
 
-.hero__row {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  gap: clamp(32px, 6vw, 64px);
-  padding: 0 clamp(20px, 5vw, 56px) clamp(56px, 10vh, 104px);
-}
-
 .hero__content {
   max-width: 46rem;
+  padding: 0 clamp(20px, 5vw, 56px) clamp(56px, 10vh, 104px);
 }
 
 .hero__kicker {
@@ -516,11 +511,9 @@
     font-size: 10.5px;
   }
 
-  .hero__row {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 22px;
-    padding-bottom: clamp(48px, 10vh, 84px);
+  .hero__theme {
+    position: static;
+    margin: 22px clamp(20px, 5vw, 56px) clamp(48px, 10vh, 84px);
   }
 
   .theme-switch {
