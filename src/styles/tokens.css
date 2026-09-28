@@ -22,9 +22,13 @@
   --glass-highlight: rgba(255, 255, 255, 0.65);
   --glass-shadow: rgba(0, 0, 0, 0.38);
 
-  --glass-amber-top: rgba(232, 201, 140, 0.42);
-  --glass-amber-bottom: rgba(202, 164, 104, 0.16);
+  --glass-amber-top: rgba(232, 201, 140, 0.48);
+  --glass-amber-bottom: rgba(202, 164, 104, 0.2);
   --glass-amber-border: rgba(255, 224, 172, 0.55);
+
+  /* buttons: a more diffuse, matte frost than the toggle */
+  --btn-glass-fill-top: rgba(255, 255, 255, 0.32);
+  --btn-glass-fill-bottom: rgba(255, 255, 255, 0.09);
 }
 
 :root[data-theme='light'] {
