@@ -1,4 +1,10 @@
 @import './tokens.css';
 @import './base.css';
+@import './site-header.css';
+@import './buttons.css';
+@import './slider.css';
 @import './hero.css';
+@import './page.css';
+@import './rooms.css';
+@import './room-detail.css';
 @import './animations.css';

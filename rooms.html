@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#12130f" />
+    <meta name="description" content="Апартаменты на Мира — каталог номеров: 1, 2 и 3-комнатные апартаменты в Массандре." />
+    <title>Номера — Апартаменты на Мира</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant:wght@500;600;700&family=Manrope:wght@400;500;600;700&family=Unbounded:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('theme');
+          var theme;
+          if (stored === 'light' || stored === 'dark') {
+            theme = stored;
+          } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            theme = 'dark';
+          } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+            theme = 'light';
+          } else {
+            var hour = new Date().getHours();
+            theme = hour >= 7 && hour < 19 ? 'light' : 'dark';
+          }
+          document.documentElement.setAttribute('data-theme', theme);
+        } catch (e) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div class="page">
+      <header class="nav">
+        <a class="nav__logo" href="index.html">
+          <span class="nav__logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 42c-1-8-1-13 0-18" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M24 24C16 22 10 26 6 32M24 24C15 18 8 18 4 22M24 24C22 14 22 8 24 4M24 24C33 18 40 18 44 22M24 24C32 22 38 26 42 32" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span class="nav__logo-text">Апартаменты<em>на&nbsp;Мира</em></span>
+        </a>
+
+        <nav class="menu" aria-label="Основное меню">
+          <a class="menu__link" href="rooms.html" aria-current="page">Номера</a>
+          <a class="menu__link" href="index.html#territory">Территория</a>
+          <a class="menu__link" href="index.html#reviews">Отзывы</a>
+          <a class="menu__link" href="index.html#contacts">Контакты</a>
+        </nav>
+
+        <div class="nav__end">
+          <div class="theme-switch">
+            <span class="theme-switch__label theme-switch__label--day" aria-hidden="true">День</span>
+            <button
+              class="theme-toggle"
+              type="button"
+              data-theme-toggle
+              aria-pressed="false"
+              aria-label="Переключить тему на дневную"
+            >
+              <span class="theme-toggle__track">
+                <span class="theme-toggle__thumb">
+                  <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <circle cx="12" cy="12" r="4.4" fill="currentColor"/>
+                    <g stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+                      <path d="M12 2.5v2.4M12 19.1v2.4M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7"/>
+                    </g>
+                  </svg>
+                  <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M20 14.2A8.5 8.5 0 1 1 9.8 4a6.7 6.7 0 0 0 10.2 10.2Z" fill="currentColor"/>
+                  </svg>
+                </span>
+              </span>
+            </button>
+            <span class="theme-switch__label theme-switch__label--night" aria-hidden="true">Ночь</span>
+          </div>
+
+          <button
+            class="menu-toggle"
+            type="button"
+            data-menu-toggle
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            aria-label="Открыть меню"
+          >
+            <span class="menu-toggle__bar"></span>
+            <span class="menu-toggle__bar"></span>
+            <span class="menu-toggle__bar"></span>
+          </button>
+        </div>
+      </header>
+
+      <div class="menu-panel" id="mobile-menu" data-menu-panel>
+        <a class="menu-panel__link" href="rooms.html">Номера</a>
+        <a class="menu-panel__link" href="index.html#territory">Территория</a>
+        <a class="menu-panel__link" href="index.html#reviews">Отзывы</a>
+        <a class="menu-panel__link" href="index.html#contacts">Контакты</a>
+      </div>
+
+      <main class="container">
+        <section class="rooms-hero" data-reveal style="--d:0ms">
+          <p class="rooms-hero__eyebrow">Апарт-отель в&nbsp;Массандре</p>
+          <h1 class="rooms-hero__title">Номера</h1>
+          <p class="rooms-hero__subtitle">
+            Выберите апартаменты по количеству комнат — от уютной студии до просторного номера для всей семьи.
+          </p>
+        </section>
+
+        <div class="rooms-filter" role="group" aria-label="Фильтр по типу апартаментов" data-reveal style="--d:80ms">
+          <button class="rooms-filter__btn is-active" data-filter="all" type="button">Все</button>
+          <button class="rooms-filter__btn" data-filter="1" type="button">1-комнатные</button>
+          <button class="rooms-filter__btn" data-filter="2" type="button">2-комнатные</button>
+          <button class="rooms-filter__btn" data-filter="3" type="button">3-комнатные</button>
+        </div>
+
+        <div class="rooms-grid" data-rooms-grid data-reveal style="--d:140ms"></div>
+      </main>
+    </div>
+
+    <script type="module" src="/src/main-rooms.ts"></script>
+  </body>
+</html>
