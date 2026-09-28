@@ -1,0 +1,51 @@
+@keyframes heroReveal {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+[data-reveal] {
+  animation: heroReveal 700ms var(--ease-out) both;
+  animation-delay: var(--d, 0ms);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] {
+    animation-name: heroFadeIn;
+    animation-duration: 250ms;
+  }
+
+  .nav__logo,
+  .theme-toggle {
+    animation-duration: 250ms;
+  }
+
+  .hero__video {
+    transition-duration: 250ms;
+  }
+
+  .theme-toggle__thumb,
+  .theme-toggle__icon,
+  .btn {
+    transition-duration: 150ms;
+  }
+
+  .scroll-cue__line::after {
+    animation: none;
+    opacity: 0.6;
+  }
+}

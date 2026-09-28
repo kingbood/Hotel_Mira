@@ -1,0 +1,44 @@
+:root {
+  --font-display: 'Fraunces', 'Georgia', serif;
+  --font-sans: 'Manrope', system-ui, -apple-system, sans-serif;
+
+  --accent: #caa468;
+  --accent-strong: #e8c98c;
+  --accent-contrast: #201404;
+
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+
+  --text: #fbf7ef;
+  --text-muted: rgba(251, 247, 239, 0.76);
+
+  --page-bg: #0c0d0a;
+}
+
+:root[data-theme='light'] {
+  --scrim-top: rgba(20, 16, 9, 0.4);
+  --scrim-mid: rgba(12, 9, 5, 0.14);
+  --scrim-bottom: rgba(8, 6, 3, 0.6);
+
+  --chrome-bg: rgba(255, 250, 240, 0.14);
+  --chrome-border: rgba(255, 255, 255, 0.4);
+
+  --toggle-track: rgba(255, 249, 235, 0.3);
+  --toggle-track-border: rgba(255, 255, 255, 0.5);
+  --toggle-thumb: #fffaf0;
+  --toggle-icon: #a9752f;
+}
+
+:root[data-theme='dark'] {
+  --scrim-top: rgba(2, 4, 8, 0.55);
+  --scrim-mid: rgba(2, 3, 6, 0.22);
+  --scrim-bottom: rgba(0, 0, 0, 0.75);
+
+  --chrome-bg: rgba(8, 10, 14, 0.32);
+  --chrome-border: rgba(255, 255, 255, 0.14);
+
+  --toggle-track: rgba(10, 12, 18, 0.55);
+  --toggle-track-border: rgba(255, 255, 255, 0.18);
+  --toggle-thumb: #1a1b22;
+  --toggle-icon: var(--accent);
+}
