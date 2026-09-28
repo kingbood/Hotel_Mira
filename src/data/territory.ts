@@ -36,6 +36,6 @@ export const territoryBlocks: TerritoryBlock[] = [
       '/images/territory/pool/2.webp',
       '/images/territory/pool/3.webp',
     ],
-    mediaSide: 'right',
+    mediaSide: 'left',
   },
 ];
