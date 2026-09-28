@@ -23,4 +23,19 @@ export const territoryBlocks: TerritoryBlock[] = [
     ],
     mediaSide: 'right',
   },
+  {
+    slug: 'pool',
+    eyebrow: 'Территория',
+    title: 'Бассейн',
+    text: [
+      'Просторный бассейн — сердце территории апарт-отеля. Здесь можно провести целый день: поплавать, позагорать или просто расслабиться на воде под крымским солнцем.',
+      'Рядом — удобные лежаки в тени зелени, где приятно отдохнуть с книгой или прохладным напитком после купания.',
+    ],
+    images: [
+      '/images/territory/pool/1.webp',
+      '/images/territory/pool/2.webp',
+      '/images/territory/pool/3.webp',
+    ],
+    mediaSide: 'right',
+  },
 ];
