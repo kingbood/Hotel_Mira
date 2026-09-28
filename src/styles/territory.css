@@ -19,7 +19,8 @@
   color: var(--text);
 }
 
-.territory-hero__eyebrow::before {
+.territory-hero__eyebrow::before,
+.territory-hero__eyebrow::after {
   content: '';
   width: 28px;
   height: 1px;
@@ -99,7 +100,8 @@
   color: var(--text);
 }
 
-.territory-block__eyebrow::before {
+.territory-block__eyebrow::before,
+.territory-block__eyebrow::after {
   content: '';
   width: 26px;
   height: 1px;

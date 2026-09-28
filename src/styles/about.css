@@ -47,7 +47,8 @@
   color: var(--text);
 }
 
-.about__eyebrow::before {
+.about__eyebrow::before,
+.about__eyebrow::after {
   content: '';
   width: 28px;
   height: 1px;

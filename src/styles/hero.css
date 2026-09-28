@@ -100,7 +100,8 @@
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.55), 0 2px 14px rgba(0, 0, 0, 0.35);
 }
 
-.hero__kicker::before {
+.hero__kicker::before,
+.hero__kicker::after {
   content: '';
   width: 28px;
   height: 1px;

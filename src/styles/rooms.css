@@ -14,7 +14,8 @@
   color: var(--text);
 }
 
-.rooms-hero__eyebrow::before {
+.rooms-hero__eyebrow::before,
+.rooms-hero__eyebrow::after {
   content: '';
   width: 28px;
   height: 1px;
