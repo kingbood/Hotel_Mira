@@ -160,8 +160,34 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 560px) {
   .rooms-grid {
-    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .room-card__body {
+    padding: 14px 12px 16px;
+    gap: 6px;
+  }
+
+  .room-card__title {
+    font-size: clamp(1rem, 0.9rem + 1vw, 1.2rem);
+  }
+
+  .room-card__price {
+    font-size: 12px;
+  }
+
+  .room-card__price small {
+    display: block;
+    margin-left: 0;
+  }
+
+  .room-card__desc {
+    display: none;
+  }
+
+  .room-card__cta {
+    font-size: 11px;
   }
 }
