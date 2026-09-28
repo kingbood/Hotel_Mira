@@ -275,9 +275,9 @@ export const rooms: Room[] = [
     ],
   },
   {
-    slug: 'panorama-3',
+    slug: 'lazur-1',
     category: '3',
-    title: 'Панорама 3',
+    title: 'Лазурь 1',
     price: 10000,
     shortDescription: 'Просторные трёхкомнатные апартаменты для большой семьи или компании с общим балконом.',
     description: [
@@ -301,11 +301,11 @@ export const rooms: Room[] = [
       'Просторный балкон с видом на море и горы',
     ],
     images: [
-      '/images/rooms/panorama-3/1.jpg',
-      '/images/rooms/panorama-3/2.jpg',
+      '/images/rooms/lazur-1/1.jpg',
+      '/images/rooms/lazur-1/2.jpg',
       '/images/rooms/panorama-1/3.webp',
       '/images/rooms/panorama-1/4.webp',
-      '/images/rooms/panorama-3/5.webp',
+      '/images/rooms/lazur-1/5.webp',
     ],
   },
 ];
