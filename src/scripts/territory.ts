@@ -7,6 +7,7 @@ function renderBlock(block: (typeof territoryBlocks)[number]): string {
 
   const paragraphs = block.text.map((p) => `<p>${p}</p>`).join('');
   const modifier = block.mediaSide === 'left' ? ' territory-block--media-left' : '';
+  const countClass = ` territory-block__media--count-${Math.min(block.images.length, 3)}`;
 
   return `
     <section class="territory-block${modifier}" data-reveal>
@@ -15,7 +16,7 @@ function renderBlock(block: (typeof territoryBlocks)[number]): string {
         <h2 class="territory-block__title">${block.title}</h2>
         <div class="territory-block__text">${paragraphs}</div>
       </div>
-      <div class="territory-block__media">${photos}</div>
+      <div class="territory-block__media${countClass}">${photos}</div>
     </section>
   `;
 }
