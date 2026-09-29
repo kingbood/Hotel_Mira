@@ -4,7 +4,7 @@
   flex-direction: column;
   min-height: 100vh;
   min-height: 100svh;
-  min-height: max(600px, 100svh, calc(100vw / 1.7));
+  min-height: max(600px, 100svh);
   width: 100%;
   overflow: hidden;
   isolation: isolate;
@@ -26,7 +26,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 65%;
+  object-position: center bottom;
   opacity: 0;
   transition: opacity 800ms var(--ease-in-out);
   will-change: opacity;
