@@ -45,7 +45,7 @@ export function initRoomDetail() {
       </div>
       <div class="room-detail__text">${paragraphs}</div>
       <ul class="room-detail__amenities">${amenities}</ul>
-      <a class="btn btn--primary room-detail__cta" href="index.html#contacts"><span class="btn__label">Забронировать</span></a>
+      <a class="btn btn--primary room-detail__cta" href="https://wa.me/79177690505" target="_blank" rel="noopener noreferrer"><span class="btn__label">Забронировать</span></a>
     </div>
   `;
 

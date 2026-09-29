@@ -5,8 +5,8 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#12130f" />
-    <meta name="description" content="Апартаменты на Мира — подробное описание номера, фотографии и стоимость проживания." />
-    <title>Апартаменты — Апартаменты на Мира</title>
+    <meta name="description" content="Апартаменты на Мира — отзывы гостей апарт-отеля в Массандре." />
+    <title>Отзывы — Апартаменты на Мира</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -51,10 +51,10 @@
         </a>
 
         <nav class="menu" aria-label="Основное меню">
-          <a class="menu__link" href="rooms.html" aria-current="page">Номера</a>
+          <a class="menu__link" href="rooms.html">Номера</a>
           <a class="menu__link" href="index.html#about">О нас</a>
           <a class="menu__link" href="territory.html">Территория</a>
-          <a class="menu__link" href="reviews.html">Отзывы</a>
+          <a class="menu__link" href="reviews.html" aria-current="page">Отзывы</a>
           <a class="menu__link" href="contacts.html">Контакты</a>
         </nav>
 
@@ -108,9 +108,70 @@
         <a class="menu-panel__link" href="contacts.html">Контакты</a>
       </div>
 
-      <main class="container room-detail" data-room-detail></main>
+      <main class="container">
+        <section class="reviews-hero" data-reveal style="--d:0ms">
+          <p class="reviews-hero__eyebrow">Апарт-отель в&nbsp;Массандре</p>
+          <h1 class="reviews-hero__title">Отзывы</h1>
+          <p class="reviews-hero__subtitle">
+            Что говорят гости, которые уже отдыхали в «Апартаментах на Мира».
+          </p>
+          <a
+            class="reviews-yandex"
+            href="https://yandex.ru/maps/11470/yalta/?ll=34.197624%2C44.509155&amp;mode=poi&amp;poi%5Bpoint%5D=34.197712%2C44.510590&amp;poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D210723200650&amp;z=15.55"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M12 2C7.6 2 4 5.6 4 10c0 6 8 12 8 12s8-6 8-12c0-4.4-3.6-8-8-8Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+              <circle cx="12" cy="10" r="2.6" stroke="currentColor" stroke-width="1.8"/>
+            </svg>
+            <span>112 отзывов на Яндекс Картах</span>
+            <span class="reviews-yandex__arrow" aria-hidden="true">→</span>
+          </a>
+        </section>
+
+        <div class="reviews-grid">
+          <article class="review-card" data-reveal style="--d:0ms">
+            <span class="review-card__quote" aria-hidden="true">“</span>
+            <p class="review-card__text">
+              Очень хороший отель, всё новое, очень уютный и просторный номер, полностью укомплектован
+              современной техникой и мебелью. Вид на побережье шикарный. Во дворе пруды с рыбками,
+              подогреваемый бассейн, батут, кофе-аппарат с напитками. Однозначно рекомендуем для
+              физического и душевного отдыха!!!
+            </p>
+          </article>
+
+          <article class="review-card" data-reveal style="--d:60ms">
+            <span class="review-card__quote" aria-hidden="true">“</span>
+            <p class="review-card__text">
+              Очень уютная и приятная атмосфера, для нашей семьи отель стал вторым домом, когда приезжаем
+              в Ялту, желание приежать снова и снова, не смотря на непогоды в нём тепло, уютно, тихо.
+              Виды, открывающиеся с окон и крыши, самые приятные для души — красота каждый раз всё больше
+              и больше хочется возвращаться на это место.
+            </p>
+          </article>
+
+          <article class="review-card" data-reveal style="--d:120ms">
+            <span class="review-card__quote" aria-hidden="true">“</span>
+            <p class="review-card__text">
+              Очень понравилось: большой номер, всё чисто, красиво, со вкусом, приятно находиться. Вид
+              офигенный: и море, и горы. Красота и днём, и ночью — Ялта в огнях прекрасна! Хозяин
+              доброжелательный, вежливый, поможет в любой ситуации. Мы кайфанули: купались в бассейне,
+              особенно сын. Пруд с рыбками, зоны отдыха — в жару это рай! Рекомендую на 100%.
+            </p>
+          </article>
+
+          <article class="review-card" data-reveal style="--d:180ms">
+            <span class="review-card__quote" aria-hidden="true">“</span>
+            <p class="review-card__text">
+              Прекрасное место, всё очень чисто, шикарный вид на море и горы, ухоженная территория,
+              отзывчивые хозяева. Планируем приехать снова.
+            </p>
+          </article>
+        </div>
+      </main>
     </div>
 
-    <script type="module" src="/src/main-room.ts"></script>
+    <script type="module" src="/src/main-reviews.ts"></script>
   </body>
 </html>
