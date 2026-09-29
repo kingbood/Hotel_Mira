@@ -4,7 +4,7 @@
   flex-direction: column;
   min-height: 100vh;
   min-height: 100svh;
-  min-height: max(600px, 100svh);
+  min-height: max(600px, 100svh, calc(100vw / 1.7));
   width: 100%;
   overflow: hidden;
   isolation: isolate;
