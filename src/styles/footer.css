@@ -1,0 +1,117 @@
+.site-footer {
+  border-top: 1px solid var(--glass-border);
+  padding: clamp(40px, 7vh, 64px) 0 clamp(24px, 4vh, 32px);
+}
+
+.site-footer__inner {
+  display: grid;
+  gap: clamp(28px, 5vh, 40px);
+  padding-bottom: clamp(28px, 5vh, 40px);
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.site-footer__brand {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.site-footer__logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  width: fit-content;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.site-footer__logo-mark {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: linear-gradient(180deg, var(--glass-fill-top), var(--glass-fill-bottom));
+  border: 1px solid var(--glass-border);
+  color: var(--accent);
+}
+
+.site-footer__logo-mark svg {
+  width: 19px;
+  height: 19px;
+}
+
+.site-footer__logo-text {
+  font-size: 12px;
+  line-height: 1.45;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.site-footer__logo-text em {
+  display: block;
+  font-style: normal;
+  color: var(--accent-strong);
+}
+
+.site-footer__tagline {
+  margin: 0;
+  max-width: 40ch;
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.site-footer__heading {
+  margin: 0 0 14px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text);
+}
+
+.site-footer__nav,
+.site-footer__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.site-footer__nav a,
+.site-footer__contacts a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 14px;
+  width: fit-content;
+  transition: color 200ms ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .site-footer__nav a:hover,
+  .site-footer__contacts a:hover {
+    color: var(--accent-strong);
+  }
+}
+
+.site-footer__bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px 24px;
+  padding-top: clamp(20px, 4vh, 28px);
+  color: var(--text-muted);
+  font-size: 12.5px;
+}
+
+.site-footer__bottom p {
+  margin: 0;
+}
+
+@media (min-width: 700px) {
+  .site-footer__inner {
+    grid-template-columns: 1.4fr 1fr 1fr;
+  }
+}
