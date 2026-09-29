@@ -1,3 +1,5 @@
+import { activateHeroVideo } from './hero-video';
+
 type Theme = 'light' | 'dark';
 
 const STORAGE_KEY = 'theme';
@@ -22,6 +24,7 @@ export function initThemeToggle() {
     const nextTheme: Theme = activeTheme === 'dark' ? 'light' : 'dark';
 
     root.setAttribute('data-theme', nextTheme);
+    activateHeroVideo(nextTheme);
 
     try {
       localStorage.setItem(STORAGE_KEY, nextTheme);

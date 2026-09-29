@@ -1,0 +1,68 @@
+html.is-loading,
+html.is-loading body {
+  overflow: hidden;
+}
+
+.loader {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--page-bg);
+  transition: opacity 450ms var(--ease-out);
+}
+
+.loader.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.loader__mark {
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, var(--glass-amber-top), var(--glass-amber-bottom));
+  border: 1px solid var(--glass-amber-border);
+  color: var(--accent-strong);
+  opacity: 0;
+  transform: scale(0.94);
+  animation: loaderReveal 500ms var(--ease-out) 80ms both, loaderPulse 1600ms ease-in-out 600ms infinite;
+}
+
+.loader__mark svg {
+  width: 28px;
+  height: 28px;
+}
+
+@keyframes loaderReveal {
+  from {
+    opacity: 0;
+    transform: scale(0.94);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes loaderPulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.06);
+    opacity: 0.78;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .loader__mark {
+    animation: loaderReveal 200ms ease both;
+  }
+}
