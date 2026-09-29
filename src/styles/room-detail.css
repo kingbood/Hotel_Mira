@@ -1,5 +1,6 @@
 .room-detail {
-  padding: clamp(28px, 6vh, 56px) 0 clamp(56px, 10vh, 104px);
+  padding-top: clamp(28px, 6vh, 56px);
+  padding-bottom: clamp(56px, 10vh, 104px);
 }
 
 .room-detail__back {

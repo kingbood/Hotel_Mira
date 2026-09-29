@@ -335,3 +335,18 @@
     height: 16px;
   }
 }
+
+/* ---------- nav on the hero video ---------- */
+/* the homepage nav sits directly over the video, so its text stays the
+   fixed hero color instead of flipping with the day/night page theme */
+
+.hero .nav__logo,
+.hero .menu__link,
+.hero .menu-panel__link,
+.hero .theme-switch__label {
+  color: var(--hero-text);
+}
+
+.hero .menu-toggle__bar {
+  background: var(--hero-text);
+}

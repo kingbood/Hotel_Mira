@@ -66,6 +66,10 @@
   color: var(--text);
 }
 
+.hero .btn--ghost {
+  color: var(--hero-text);
+}
+
 @media (hover: hover) and (pointer: fine) {
   .btn--primary:hover {
     transform: translateY(-2px);

@@ -4,6 +4,7 @@
   flex-direction: column;
   min-height: 100vh;
   min-height: 100svh;
+  min-height: max(600px, 100svh);
   width: 100%;
   overflow: hidden;
   isolation: isolate;
@@ -96,7 +97,7 @@
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--text);
+  color: var(--hero-text);
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.55), 0 2px 14px rgba(0, 0, 0, 0.35);
 }
 
@@ -115,7 +116,7 @@
   font-size: clamp(2.7rem, 2.3rem + 3.4vw, 5.6rem);
   line-height: 1.03;
   letter-spacing: 0;
-  color: var(--text);
+  color: var(--hero-text);
 }
 
 .hero__subtitle {
@@ -123,7 +124,7 @@
   max-width: 42ch;
   font-size: clamp(1rem, 0.94rem + 0.3vw, 1.2rem);
   line-height: 1.6;
-  color: var(--text-muted);
+  color: var(--hero-text-muted);
 }
 
 .hero__actions {

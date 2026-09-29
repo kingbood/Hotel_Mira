@@ -10,10 +10,46 @@
   --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
   --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
 
+  /* text that sits directly on the hero video — stays readable in both themes, never flips */
+  --hero-text: #fbf7ef;
+  --hero-text-muted: rgba(251, 247, 239, 0.76);
+}
+
+:root[data-theme='light'] {
+  --page-bg: #f4efe3;
+  --text: #211a10;
+  --text-muted: rgba(33, 26, 16, 0.68);
+
+  --glass-fill-top: rgba(255, 255, 255, 0.55);
+  --glass-fill-bottom: rgba(255, 255, 255, 0.22);
+  --glass-border: rgba(120, 94, 50, 0.28);
+  --glass-highlight: rgba(255, 255, 255, 0.8);
+  --glass-shadow: rgba(80, 60, 20, 0.16);
+
+  --glass-amber-top: rgba(232, 201, 140, 0.75);
+  --glass-amber-bottom: rgba(202, 164, 104, 0.42);
+  --glass-amber-border: rgba(169, 117, 47, 0.45);
+
+  --btn-glass-fill-top: rgba(255, 255, 255, 0.62);
+  --btn-glass-fill-bottom: rgba(255, 255, 255, 0.28);
+
+  --scrim-top: rgba(20, 16, 9, 0.4);
+  --scrim-mid: rgba(12, 9, 5, 0.14);
+  --scrim-bottom: rgba(8, 6, 3, 0.6);
+
+  --chrome-bg: rgba(255, 250, 240, 0.14);
+  --chrome-border: rgba(255, 255, 255, 0.4);
+
+  --toggle-thumb: #fffaf0;
+  --toggle-icon: #a9752f;
+
+  color-scheme: light;
+}
+
+:root[data-theme='dark'] {
+  --page-bg: #0c0d0a;
   --text: #fbf7ef;
   --text-muted: rgba(251, 247, 239, 0.76);
-
-  --page-bg: #0c0d0a;
 
   /* liquid glass surfaces (buttons, theme switch) */
   --glass-fill-top: rgba(255, 255, 255, 0.26);
@@ -29,21 +65,7 @@
   /* buttons: a more diffuse, matte frost than the toggle */
   --btn-glass-fill-top: rgba(255, 255, 255, 0.32);
   --btn-glass-fill-bottom: rgba(255, 255, 255, 0.09);
-}
 
-:root[data-theme='light'] {
-  --scrim-top: rgba(20, 16, 9, 0.4);
-  --scrim-mid: rgba(12, 9, 5, 0.14);
-  --scrim-bottom: rgba(8, 6, 3, 0.6);
-
-  --chrome-bg: rgba(255, 250, 240, 0.14);
-  --chrome-border: rgba(255, 255, 255, 0.4);
-
-  --toggle-thumb: #fffaf0;
-  --toggle-icon: #a9752f;
-}
-
-:root[data-theme='dark'] {
   --scrim-top: rgba(2, 4, 8, 0.55);
   --scrim-mid: rgba(2, 3, 6, 0.22);
   --scrim-bottom: rgba(0, 0, 0, 0.75);
@@ -53,4 +75,6 @@
 
   --toggle-thumb: #1a1b22;
   --toggle-icon: var(--accent);
+
+  color-scheme: dark;
 }
