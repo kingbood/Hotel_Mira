@@ -24,6 +24,10 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
   [data-reveal] {
     animation-name: heroFadeIn;
     animation-duration: 250ms;

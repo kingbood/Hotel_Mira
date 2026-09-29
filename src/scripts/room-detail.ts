@@ -18,7 +18,7 @@ export function initRoomDetail() {
       <div class="room-detail__missing">
         <h1>Апартаменты не найдены</h1>
         <p>Возможно, ссылка устарела.</p>
-        <a class="btn btn--primary" href="rooms.html"><span class="btn__label">Ко всем апартаментам</span></a>
+        <a class="btn btn--primary" href="index.html#rooms"><span class="btn__label">Ко всем апартаментам</span></a>
       </div>
     `;
     return;
@@ -33,7 +33,7 @@ export function initRoomDetail() {
   const amenities = room.amenities.map((a) => `<li>${a}</li>`).join('');
 
   content.innerHTML = `
-    <a class="room-detail__back" href="rooms.html">← Все апартаменты</a>
+    <a class="room-detail__back" href="index.html#rooms">← Все апартаменты</a>
     <div class="room-detail__gallery" data-slider>
       <div class="slider__track" data-track>${slides}</div>
       ${room.images.length > 1 ? sliderControlsHTML() : ''}
