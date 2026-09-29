@@ -1,4 +1,4 @@
-import{a as e,i as t,n,o as r,r as i,s as a,t as o}from"./room-slider-Ch5MSPgd.js";function s(e){return`${e.toLocaleString(`ru-RU`)} ₽`}function c(e){let t=e.images.map((t,n)=>`<img src="${t}" alt="${e.title} — фото ${n+1}" loading="lazy" />`).join(``);return`
+import{a as e,i as t,n,o as r,r as i,s as a,t as o}from"./room-slider-CYEK-nSD.js";function s(e){return`${e.toLocaleString(`ru-RU`)} ₽`}function c(e){let t=e.images.map((t,n)=>`<img src="${t}" alt="${e.title} — фото ${n+1}" loading="lazy" />`).join(``);return`
     <article class="room-card" data-category="${e.category}">
       <div class="room-card__slider" data-slider>
         <div class="slider__track" data-track>${t}</div>

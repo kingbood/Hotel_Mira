@@ -1,4 +1,4 @@
-import{a as e,i as t,n,r,s as i,t as a}from"./room-slider-Ch5MSPgd.js";function o(e){return`${e.toLocaleString(`ru-RU`)} ₽`}function s(){let e=new URLSearchParams(location.search).get(`slug`),t=r.find(t=>t.slug===e),i=document.querySelector(`[data-room-detail]`);if(!i)return;if(!t){i.innerHTML=`
+import{a as e,i as t,n,r,s as i,t as a}from"./room-slider-CYEK-nSD.js";function o(e){return`${e.toLocaleString(`ru-RU`)} ₽`}function s(){let e=new URLSearchParams(location.search).get(`slug`),t=r.find(t=>t.slug===e),i=document.querySelector(`[data-room-detail]`);if(!i)return;if(!t){i.innerHTML=`
       <div class="room-detail__missing">
         <h1>Апартаменты не найдены</h1>
         <p>Возможно, ссылка устарела.</p>
