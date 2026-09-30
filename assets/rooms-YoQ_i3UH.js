@@ -1,0 +1,1 @@
+import{a as e,i as t,s as n}from"./room-slider-BBgQVe8-.js";import{n as r}from"./rooms-catalog-Dwzl9Fyn.js";n(),e(),t(),r();

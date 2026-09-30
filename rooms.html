@@ -5,7 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#12130f" />
-    <meta name="description" content="Апартаменты на Мира — подробное описание номера, фотографии и стоимость проживания." />
+    <meta name="description" content="Апартаменты на Мира — полный каталог апартаментов: фотографии, удобства и стоимость проживания." />
     <title>Апартаменты — Апартаменты на Мира</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -36,8 +36,9 @@
         }
       })();
     </script>
-    <script type="module" crossorigin src="./assets/room-BEoEoCah.js"></script>
+    <script type="module" crossorigin src="./assets/rooms-YoQ_i3UH.js"></script>
     <link rel="modulepreload" crossorigin href="./assets/room-slider-BBgQVe8-.js">
+    <link rel="modulepreload" crossorigin href="./assets/rooms-catalog-Dwzl9Fyn.js">
     <link rel="stylesheet" crossorigin href="./assets/room-slider-BBvSdVUq.css">
   </head>
   <body>
@@ -126,7 +127,26 @@
         </a>
       </div>
 
-      <main class="container room-detail" data-room-detail></main>
+      <main class="container">
+        <section class="rooms-section rooms-section--catalog">
+          <div class="rooms-hero" data-reveal style="--d:0ms">
+            <p class="rooms-hero__eyebrow">Апарт-отель в&nbsp;Массандре</p>
+            <h1 class="rooms-hero__title">Апартаменты</h1>
+            <p class="rooms-hero__subtitle">
+              Выберите апартаменты по количеству комнат — от уютной студии до просторного номера для всей семьи.
+            </p>
+          </div>
+
+          <div class="rooms-filter" role="group" aria-label="Фильтр по типу апартаментов" data-reveal style="--d:80ms">
+            <button class="rooms-filter__btn is-active" data-filter="all" type="button">Все</button>
+            <button class="rooms-filter__btn" data-filter="1" type="button">1-комнатные</button>
+            <button class="rooms-filter__btn" data-filter="2" type="button">2-комнатные</button>
+            <button class="rooms-filter__btn" data-filter="3" type="button">3-комнатные</button>
+          </div>
+
+          <div class="rooms-grid" data-rooms-grid data-reveal style="--d:140ms"></div>
+        </section>
+      </main>
 
       <footer class="site-footer">
         <div class="container site-footer__inner">
