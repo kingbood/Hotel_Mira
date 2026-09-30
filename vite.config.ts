@@ -8,6 +8,7 @@ export default defineConfig({
       input: {
         main: fileURLToPath(new URL('./index.html', import.meta.url)),
         room: fileURLToPath(new URL('./room.html', import.meta.url)),
+        rooms: fileURLToPath(new URL('./rooms.html', import.meta.url)),
       },
     },
   },

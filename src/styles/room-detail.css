@@ -97,6 +97,22 @@
   color: var(--text);
 }
 
+.room-detail__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+@media (max-width: 560px) {
+  .room-detail__actions {
+    flex-direction: column;
+  }
+
+  .room-detail__actions .btn {
+    width: 100%;
+  }
+}
+
 .room-detail__missing {
   padding: clamp(60px, 14vh, 120px) 0;
   text-align: center;

@@ -18,7 +18,7 @@ export function initRoomDetail() {
       <div class="room-detail__missing">
         <h1>Апартаменты не найдены</h1>
         <p>Возможно, ссылка устарела.</p>
-        <a class="btn btn--primary" href="index.html#rooms"><span class="btn__label">Ко всем апартаментам</span></a>
+        <a class="btn btn--primary" href="rooms.html"><span class="btn__label">Ко всем апартаментам</span></a>
       </div>
     `;
     return;
@@ -33,7 +33,7 @@ export function initRoomDetail() {
   const amenities = room.amenities.map((a) => `<li>${a}</li>`).join('');
 
   content.innerHTML = `
-    <a class="room-detail__back" href="index.html#rooms">← Все апартаменты</a>
+    <a class="room-detail__back" href="rooms.html">← Все апартаменты</a>
     <div class="room-detail__gallery" data-slider>
       <div class="slider__track" data-track>${slides}</div>
       ${room.images.length > 1 ? sliderControlsHTML() : ''}
@@ -45,7 +45,10 @@ export function initRoomDetail() {
       </div>
       <div class="room-detail__text">${paragraphs}</div>
       <ul class="room-detail__amenities">${amenities}</ul>
-      <a class="btn btn--primary room-detail__cta" href="https://wa.me/79177690505" target="_blank" rel="noopener noreferrer"><span class="btn__label">Забронировать</span></a>
+      <div class="room-detail__actions">
+        <a class="btn btn--primary room-detail__cta" href="https://wa.me/79177690505?text=${encodeURIComponent(`Здравствуйте! Хочу проверить свободные даты для апартаментов «${room.title}».`)}" target="_blank" rel="noopener noreferrer"><span class="btn__label">Проверить даты</span></a>
+        <a class="btn btn--ghost room-detail__cta" href="https://wa.me/79177690505?text=${encodeURIComponent(`Здравствуйте! Хочу забронировать апартаменты «${room.title}».`)}" target="_blank" rel="noopener noreferrer"><span class="btn__label">Забронировать</span></a>
+      </div>
     </div>
   `;
 

@@ -93,6 +93,22 @@
   justify-self: end;
 }
 
+.nav__cta {
+  padding: 12px 22px;
+  animation: heroFadeIn 600ms var(--ease-out) both;
+  animation-delay: 80ms;
+}
+
+.nav__cta .btn__label {
+  font-size: 12px;
+}
+
+@media (max-width: 960px) {
+  .nav__end .nav__cta {
+    display: none;
+  }
+}
+
 .menu-toggle {
   display: none;
   align-items: center;

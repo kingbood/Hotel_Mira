@@ -1,0 +1,82 @@
+/* ---------- small inline CTA: after territory, after reviews ---------- */
+
+.cta-inline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+  padding: clamp(32px, 6vh, 48px) clamp(20px, 5vw, 40px);
+  margin-top: clamp(8px, 2vh, 16px);
+  border-radius: 24px;
+  border: 1px solid var(--glass-border);
+  background: linear-gradient(180deg, var(--glass-fill-top), var(--glass-fill-bottom));
+}
+
+.cta-inline__title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(1.3rem, 1.15rem + 0.6vw, 1.6rem);
+}
+
+.cta-inline__subtitle {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 14.5px;
+  line-height: 1.6;
+}
+
+/* ---------- final CTA before contacts ---------- */
+
+.cta-final {
+  padding: clamp(56px, 10vh, 104px) 0;
+}
+
+.cta-final__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  text-align: center;
+  padding: clamp(40px, 7vh, 64px) clamp(20px, 6vw, 56px);
+  border-radius: 28px;
+  border: 1px solid var(--glass-amber-border);
+  background: linear-gradient(180deg, var(--glass-amber-top), var(--glass-amber-bottom));
+  box-shadow: inset 0 1px 0 var(--glass-highlight), 0 20px 44px -24px rgba(0, 0, 0, 0.5);
+}
+
+.cta-final__title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(2rem, 1.75rem + 1.6vw, 2.9rem);
+  line-height: 1.1;
+}
+
+.cta-final__subtitle {
+  margin: 0 0 8px;
+  max-width: 42ch;
+  color: var(--text-muted);
+  font-size: clamp(1rem, 0.96rem + 0.2vw, 1.1rem);
+  line-height: 1.6;
+}
+
+.cta-final__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+@media (max-width: 560px) {
+  .cta-final__actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .cta-final__actions .btn {
+    width: 100%;
+  }
+}

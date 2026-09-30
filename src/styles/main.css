@@ -7,9 +7,12 @@
 @import './hero.css';
 @import './about.css';
 @import './page.css';
+@import './why.css';
 @import './rooms.css';
 @import './room-detail.css';
 @import './territory.css';
+@import './quiz.css';
+@import './cta-band.css';
 @import './reviews.css';
 @import './contacts.css';
 @import './footer.css';
